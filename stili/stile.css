@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #303030;
+    margin: 0;
+    
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    margin-left: 10px;
+    font-size: 2em;
+    color: #fff;
+    
+}
+
+#Menu{
+    height: 100px;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: #444444;
+    transition: 1.5s;
+    z-index: 10;
+}
+
+#Menu:hover{
+    background-color: #d8d2d2;
+}
+
+#Menu nav{
+    display: inline-block;
+    margin-top: 62px;
+}
+
+#Menu ul{
+    display: inline-block;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    
+}
+
+#Menu ul li{
+    display: inline-block;
+    
+}
+
+#Menu ul li a{
+    display: block;
+    padding: 5px 30px;
+    text-decoration: none;
+    color: rgb(151, 151, 151); 
+    
+}
+
+#Menu ul li a:hover{
+    border-bottom: solid 2px #000;
+    color: #000;
+}
+
+
+
+#logo{
+    position: absolute;
+    top: 5px;
+    left: 45%;
+    width: 200px;
+    height: 50px;
+    
+}
+
+#logo img{
+    height: 50px;
+    width: 170px;
+}
+
+/*-FINE STILE MENU-*/
+
+#box{
+    
+    height: 600px;
+    width: 100%;
+    position: absolute;
+    margin-top: 150px;
+    padding: 25px;
+    
+}
+
+#boxuno{
+    
+    height: 550px;
+    width: 60%;
+    float: left;
+    margin-left: 93px;
+    box-shadow: 0px 0px 60px #000000;
+}
+/*EFFETTO */
+.boc{
+    
+    width: 25%;
+    float: left;
+    margin-left: 80px;
+    height: 550px;
+    background-color:#141414;
+    
+}
+
+.Acc::before , .glow::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg , #fb1404, #ff0400, #2e2a2a, rgb(255, 55, 0), #ff2600, #4f444b, #e6190e, #ff0d00, #ff3609);
+    background-size: 400%;
+    width: calc(100%);
+    height: calc(100% );
+    z-index: -1;
+    animation: animate 20s linear infinite;
+    box-shadow: 0px 0px 40px #fff;
+}
+    @keyframes animate{
+        0%{
+            background-position:0 0;
+        }
+
+        50%{
+            background-position: 400% 0;
+        }
+
+        100%{
+            background-position: 0 0;
+        }
+    }
+
+.glow::after{
+    filter: blur(40px);
+}
+/*FINE EFFETTO*/
+
+#boxuno img{
+    height: 100%;
+    width: 100%;
+}
+
+.profilo{
+    
+    position: relative;
+    height: 120px;
+    width: 120px;
+    margin: 0 auto;
+    top: 10px;
+}
+
+
+
+.profilo img{
+    height: 100%;
+    width: 100%;
+}
+
+.profilo h1{
+    text-align: center;
+    font-size: 2em;
+    margin: 5px;
+    color: #fff;
+}
+
+#resto{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin-top: 800px;
+}
+
+#film{
+    height: 570px;
+}
+
+#film .prova{ 
+    position: absolute;
+    width: 100%;
+    padding: 0;
+}
+
+/*SLIDER*/
+
+.slider{
+    display: flex;
+}
+
+
+.slider .slider_items{
+    width: 350px;
+    height: 450px;
+    margin-left: 50px;
+    margin-top: 20px;
+    transition: 1s;
+    /*border: solid 1px red; DA CAPIRE*/
+    cursor: pointer;
+}
+
+.slider .slider_items img{
+    width: 370px;
+    height: 250px;
+    box-shadow: 0px 0px 30px  #fff;
+}
+
+.prew{
+    margin-left: 10px;
+    color: #000000;
+    width: 40px;
+    height: 50px;
+    background: #ffffff12;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 2em;
+    transition: 1.5s;
+}
+
+.next{
+    position: absolute;
+    right: 10px;
+    top:0;
+    width: 40px;
+    height: 50px;
+    background: #ffffff12;
+    text-align: center;
+    line-height: 50px;
+    font-size: 2em;
+    transition: 1.5s;
+    cursor: pointer;
+}
+
+.next:hover{
+    background: #fff;
+}
+
+.prew:hover{
+    background: #fff
+}
+/*--EFFETTO HOVER(TRAMA) E ZOOM */
+.zoom{
+    transform: scale(105%);
+}
+
+h3{
+    
+    margin-top: 15px;
+    padding: 0;
+    color: #fff;
+    
+}
+
+p{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    width: 350px;
+}
+
+.slider_items h3,.slider_items p{
+    display: none;
+}
+
+.zoom h3,.zoom p{
+    display: block;
+}
+
+#serie{
+    
+    height: 570px;
+}
+/*--FINE--*/
+
+
+/*--ABBONAMENTI*/
+#abbonati{
+    
+    position: absolute;
+    width: 100%;
+    padding: 0;
+    height: 600px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#abbonati .abbonamenti{
+    position: relative;
+    
+    height: 400px;
+    width: 20%;
+    margin-top: 50px;
+    float: left;
+    margin-right: 3%;
+    background-color: #00000084;
+    box-shadow: 0px 0px 50px red;
+}
+
+#abbonati h1{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.abbonamenti h1{
+    font-size: 2.5em;
+    color: #dac50c;
+}
+
+.titolo{
+    height: 100%;
+    padding-left: 10%;
+}
+
+.abbonamenti p{
+    width: 100%;
+    padding-left: 10px;
+    font-size: 1.3em;
+    margin-top: 50px;
+}
+
+.abbonamenti h2{
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: #40ff00;
+    font-size: 3em;
+}
+
+.BUTTON{
+    width: 150px;
+    height: 50px;
+    font-size: 1.3em;
+    border-radius: 10px;
+    margin-top: 35px;
+    cursor: pointer;
+    border: 2px solid #40ff00;
+    background: transparent;
+    color: #fff;
+    transition: 1s;
+}
+
+.BUTTON:hover{
+    background-color: #2a9306;
+}
+
+
+/*--FINE ABBONAMENTI--*/
+
+/*--POPUP*/
+
+#popup{
+    text-align: center;
+    position: fixed;
+    height: 400px;
+    width: 20%;
+    /*top: 200px;*/
+    left: 40%;
+    box-shadow: 0px 0px 90px #fff;
+    background-color: #444444;
+    display: block;
+    top: -400px;
+    transition: 3s;
+    
+}
+
+/* CLASSE PER IL POPUP*/
+.piu{
+    margin-top: 650px;
+}
+
+#popup img{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+}
+
+#popup p{
+    margin-top: 30px;
+    height: 200px;
+    width: 100%;
+    font-size: 1.6em;
+    text-align:left;
+    padding: 10px;
+}
+
+#popup .esci{
+    border-radius: 100%;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    margin-top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+#popup .esci img{height: 100%; width: 100%;}
+
+/*DIV VIDEO*/
+
+.slider nav{
+    border: solid 1px white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+} 
+
+#breakingbad{display: none;}
+
+
+.serie-tv{
+    
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    background-color: #000000b3;
+}
+
+.serietv{
+    width: 90%;
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: #131212;
+    z-index: 200;
+}
+
+.serietv video{
+    border: solid 2px #fff;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+    box-shadow: 0px 0px 10px #fff
+}
+
+.serietv .chiudi{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    right: 96px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.testo{
+   
+    width: 800px;
+    margin-left: 20px;
+    height: 330px;
+    color: #fff;
+}
+
+.testo p{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.episodi{
+    position: absolute;
+    width: 40%;
+    height: 90%;
+    float: left;
+    top: 50px;
+    right: 150px; 
+}
+
+.episodipiccoli{
+   background-color: #0000005b;
+    float: left;
+    width: 750px;
+    height: 200px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.episodipiccoli .imm{
+    
+    width: 250px;
+    height: 200px;
+    float: left;
+}
+
+.imm img{
+    width: 100%;
+    height: 100%;
+}
+
+.episoditrama{
+    float: left;
+    height: 200px;
+    margin-left: 20px;
+    width: 450px;
+    padding-left: 20px;
+}
+
+.episodipiccoli:hover{
+    transform: scale(108%);
+    cursor: pointer;
+}
+
+.testo button{
+    position: absolute;
+    border: solid 2px green;
+    margin-top: 30px;
+    height: 40px;
+    width: 200px;
+    font-size: 1.2em;
+    background-color: #40ff00;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.testo button:hover{
+    background-color: #fff;
+}
+
+#dark{display: none;}
+
+#mind{display: none;}
+
+#avatar{display: none;}
+
+#ironman{display: none;}
+
+#accedi{
+    text-align: center;
+}
+
+#accedi div{
+    
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#accedi label{
+    text-align: left;
+    color: #fff;
+}
+
+#accedi input{
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+}
+
+
+#accedi button{
+    margin-top: 70px;
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    border: solid 2px green;
+    background-color: #fff;
+    font-size: 2em;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#accedi button:hover{
+    background-color: rgb(11, 203, 11);
+}
+
+.ERR{
+    border-color: red;
+    background-color: rgb(175, 63, 63);
+    
+}
+
+#accedi span{
+    color: red;
+    
+}
+
+#utente{
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 150px;
+    height: 200px;
+    margin-left: 130px;
+}
+
+#utente img{
+    width: 100%;
+    height: 100%;
+}
+
+#registrazione{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 200;
+    background-color: #000000b3;
+    display: none;
+}
+
+#registrazione .regchiudi{
+    position: relative;
+    float: right;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.regchiudi img{
+    height: 100%;
+    width: 100%;
+}
+
+#registrazione .reg{
+    background-color: #414141;
+    height: 700px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#registrati{ 
+    height: auto;
+    text-align: center;
+}
+
+#registrati h1{
+    padding-left: 40px;
+}
+
+#registrati div{
+    top: 40px;
+    width: 300px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+#registrati label{
+    color: #fff;
+}
+
+#registrati input{
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+}
+
+#registrati #accetto{
+    width: auto;
+    width: 20px;
+    height: 20px;
+}
+
+#registrati button{
+    margin-top: 200px;
+    width: 180px;
+    height: 40px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(9, 232, 9);
+}
+
+#registrati span{
+    color: red;
+}
+
+#registrati #riuscito{
+    color: rgb(13, 231, 13);
+    position: relative;
+    top: 80px;
+    font-size: 1.1em;
+}
+
+
+
+
+
+
+
+
+
+

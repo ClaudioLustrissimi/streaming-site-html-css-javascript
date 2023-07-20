@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: #141414eb;
+}
+
+body{
+    margin: 0;
+    background-image: url(../immagini/netflixreg.jpg);
+}
+
+p{
+    color: #fff;
+    text-align:center;
+
+}
+
+#login{
+    border: solid 2px #000 ;
+    height: auto;
+    width: 30%;
+    position: absolute;
+    margin-left: 35%;
+    margin-top: 10px;
+    background-color: #141414eb;
+    
+}
+
+#login h1{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+form{
+    padding:20px ;
+    
+}
+
+form div{
+    padding: 20px 0;
+}
+form input{
+    width: 100%;
+    font-size: 1.2em;
+    padding: 2px;
+    
+}
+label{
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+form #accetto{
+    width: auto;
+    
+}
+
+form button{
+    border: none;
+    margin: 0 auto;
+    display: block;
+    font-size: 1.5em;
+    padding: 10px 20px ;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+form button:hover{
+    background-color: green;
+    transition: 1s;
+    color: #fff;
+}
+
+#accedi{
+    
+    margin-top: 80px;
+    text-align: center;
+    padding: 0;
+}
+
+#accedi p{
+    color: #fff;
+    font-size: 1.2em;
+}
+
+#accedi a{
+    text-decoration: none;
+    color: green;
+    font-size: 1.2em;
+    border: solid 1px green;
+    padding: 5px;
+}
+
+#accedi a:hover{
+    background-color: green;
+    color: #fff;
+    transition: 1s;
+}
+
+.errore{
+    border-color: red;
+    background-color: rgb(236, 110, 110);
+    
+}
+
+span{
+    color: red;
+}
+
+#messaggio{
+    height: 80px;
+    font-size: 1.0em;
+    width: 100%;
+}
